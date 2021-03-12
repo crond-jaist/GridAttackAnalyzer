@@ -1,0 +1,9 @@
+
+GridAttackAnalyzer v1.0
+-----------------------
+* First public release of GridAttackAnalyzer, the smart grid attack
+  analysis framework that makes it possible to determine attack paths
+  and calculate various security metrics for a given smart grid model
+  and cyber-attack scenario. The framework is extensible by end users,
+  and the current release includes three smart grid models, more than
+  20 types of smart grid devices, and 40 types of vulnerabilities.
