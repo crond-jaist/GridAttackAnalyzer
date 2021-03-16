@@ -1,0 +1,10 @@
+This file includes the main contributors to the GridAttackAnalyzer project.
+
+Initial implementation:
+  Tan Duy Le  (main developer)
+  Mengmeng Ge (revised the AG/AT/HARM implementation;
+               initial network/node/vulnerability classes & metric calculation)
+  Jin B. Hong (initial AG/AT/HARM implementation)
+
+Current maintainers:
+  Razvan Beuran
