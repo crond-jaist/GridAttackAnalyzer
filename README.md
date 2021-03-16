@@ -35,7 +35,7 @@ has the following components:
 * **Smart Grid Model**: Definitions of network and power grid models
 * **Database**: Information about device types and network
   vulnerabilities
-* **Attack Scenario**: Definition of the attack scenario (entry
+* **Attack Scenarios**: Definition of the attack scenario (entry
   points, targets, vulnerabilities)
 * **Database Manager**: Interface that interacts with the end users to
   provide the necessary information from the database to the attack
@@ -48,7 +48,7 @@ has the following components:
   calculates the **Security Metrics** corresponding to a given attack
   scenario
 
-![GridAttackAnalyzer](Figures/framework_architecture.png "Architecture of the GridAttackAnalyzer framework")
+![GridAttackAnalyzer Architecture](Figures/framework_architecture.png "Architecture of the GridAttackAnalyzer framework")
 
 End users can extend the features provided by GridAttackAnalyzer by
 adding new smart grid topologies, new devices, and new network
@@ -96,7 +96,7 @@ to set up all the additional components:
    python3 GridAttackAnalyzer.py
    ```
 
-   ![GridAttackAnalyzer-GUI](Figures/framework_gui.png "GUI of the GridAttackAnalyzer framework")
+   ![GridAttackAnalyzer GUI](Figures/framework_gui.png "GUI of the GridAttackAnalyzer framework")
 
 2. Once the GUI is displayed, as shown above, follow the next steps to
    configure and run the analysis:
@@ -105,9 +105,9 @@ to set up all the additional components:
       Connection, CVEs, Devices and Vulnerabilities. The built-in
       network model is shown below; please consider it when selecting
       the devices to make sure that end-to-end routes exist.
-  
-	  ![Network Model](Figures/network_model.png "Built-in smart grid network model")
-  
+
+      ![Network Model](Figures/network_model.png "Built-in smart grid network model")
+
    2. Click on the "Generate File" button to generate the initial
       attack analysis file; this file can be fine tuned if desired by:
       * _Option 1:_ Click on "1 - Manual Edit" to open the file, then
@@ -117,7 +117,7 @@ to set up all the additional components:
         "Update" to bring the attack analysis file up to date.
 
    3. Click on the "Run" button to start the attack analysis.
-  
+
    4. When the attack analysis process finishes, you can use any of
       the following functions by clicking on the corresponding
       buttons:
@@ -138,8 +138,7 @@ following papers:
   R. Beuran, Y. Tan, "CVSS Based Attack Analysis using a Graphical
   Security Model: Review and Smart Grid Case Study", 4th EAI
   International Conference on Smart Grid and Internet of Things (SGIoT
-  2020), TaiChung, Taiwan, December 5-6, 2020.
+  2020), TaiChung, Taiwan, December 5-6, 2020, pp. 116-134.
 
 For a list of contributors to this project, check the file
 CONTRIBUTORS included with the source code.
-
