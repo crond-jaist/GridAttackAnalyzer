@@ -1,0 +1,568 @@
+{
+  "type": "attack_tree_library",
+  "version": "1.0",
+  "created": "2021-01-01",
+  "object": [
+    {
+      "object_id": 0,
+      "name": "Power Grid Model",
+      "description": "Power Grid Model",
+      "model_list":[
+        {
+          "list_name": "IEEE 4 Node",
+          "streets_and_houses": [
+            {
+              "A": 5,
+              "B": 6,
+              "C": 8,
+              "D": 12
+            }
+          ]
+        },
+        {
+          "list_name": "IEEE 13 Node",
+          "streets_and_houses": [
+            {
+              "A": 5,
+              "B": 6,
+              "C": 8,
+              "D": 12,
+              "E": 15
+            }
+          ]
+        },
+                {
+          "list_name": "R4-12.47-2",
+          "streets_and_houses": [
+            {
+              "A": 2,
+              "B": 2,
+              "C": 1,
+              "D": 1,
+              "E": 1
+            }
+          ]
+        }
+        ]
+    },
+
+    {
+      "object_id": 1,
+      "name": "Devices",
+      "description": "Devices List",
+      "devices_list":[
+        {
+          "device_name": "Smart TV",
+          "CVE_list": ["CVE-2019-9871","CVE-2019-11336", "CVE-2019-12477", "CVE-2018-13989", "CVE-2020-9264"],
+          "group": 1
+        },
+        {
+          "device_name": "Smart Thermostat",
+          "CVE_list": ["CVE-2018-11315","CVE-2013-4860"],
+          "group": 1
+        },
+        {
+          "device_name": "Cleaner",
+          "CVE_list": ["CVE-2018-17177","CVE-2018-10987","CVE-2018-20785","CVE-2019-12821", "CVE-2019-12820"],
+          "group": 1
+        },
+        {
+          "device_name": "Light",
+          "CVE_list": ["CVE-2020-6007","CVE-2019-18980","CVE-2017-14797"],
+          "group": 1
+        },
+        {
+          "device_name": "IP Camera",
+          "CVE_list": ["CVE-2020-3110","CVE-2020-11949", "CVE-2020-11623"],
+          "group": 1
+        },
+        {
+          "device_name": "Smart Meter",
+          "CVE_list": ["CVE-2017-9944"],
+          "group": 2
+        },
+        {
+          "device_name": "Gateway",
+          "CVE_list": ["CVE-2018-3879","CVE-2018-3911","CVE-2018-3907", "CVE-2018-3909", "CVE-2018-3902",  "CVE-2018-3880", "CVE-2018-3906", "CVE-2018-3912", "CVE-2018-3917", "CVE-2018-3919", "CVE-2018-3926", "CVE-2018-3927"],
+          "group": 2
+        },
+        {
+          "device_name": "Concentrator",
+          "CVE_list": ["CVE-2020-1638"],
+          "group": 3
+        },
+        {
+          "device_name": "Local Terminal",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+
+        {
+          "device_name": "PMU",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+
+        {
+          "device_name": "Substation RTU",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+
+        {
+          "device_name": "PLC",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "FEP",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "Application Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "Active Directory Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "Historian Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "Communication Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "HMI",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "Work Station",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "ICCP Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        },
+        {
+          "device_name": "EMS DRP Server",
+          "CVE_list": ["CVE-2020-9391", "CVE-2019-6454"],
+          "group": 3
+        }
+
+
+      ]
+    },
+
+    {
+      "object_id": 2,
+      "name": "CVE",
+      "description": "CVE List",
+      "CVE_list":[
+        {
+          "CVE": "CVE-2017-9944",
+          "description": "Allow an unauthenticated remote attacker to perform administrative operations over the network",
+          "CVSS_Base_Score_2.0": 10,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 10
+
+        },
+        {
+          "CVE": "CVE-2020-9391",
+          "description": "An issue was discovered in the Linux kernel 5.4 and 5.5 through 5.5.6 on the AArch64 architecture. It ignores the top byte in the address passed to the brk system call, potentially moving the memory break downwards when the application expects it to move upwards, aka CID-dcde237319e6. This has been observed to cause heap corruption with the GNU C Library malloc implementation.",
+          "CVSS_Base_Score_2.0": 2.1,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 3.9
+
+        },
+        {
+          "CVE": "CVE-2019-6454",
+          "description": "An issue was discovered in sd-bus in systemd 239. bus_process_object() in libsystemd/sd-bus/bus-objects.c allocates a variable-length stack buffer for temporarily storing the object path of incoming D-Bus messages. An unprivileged local user can exploit this by sending a specially crafted message to PID1, causing the stack pointer to jump over the stack guard pages into an unmapped memory region and trigger a denial of service (systemd PID1 crash and kernel panic).\n\n",
+          "CVSS_Base_Score_2.0": 4.9,
+          "Impact_Subscore": 6.9,
+          "Exploitability_Subscore": 3.9
+
+        },
+        {
+          "CVE": "CVE-2019-12477",
+          "description": "Supra Smart Cloud TV allows remote file inclusion in the openLiveURL function, which allows a local attacker to broadcast fake video without any authentication via a /remote/media_control?action=setUri&uri= URI.",
+          "CVSS_Base_Score_2.0": 2.1,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 3.9
+
+        },
+        {
+          "CVE": "CVE-2019-12820",
+          "description": "A vulnerability was found in the app 2.0 of the Shenzhen Jisiwei i3 robot vacuum cleaner. Actions performed on the app such as changing a password, and personal information it communicates with the server, use unencrypted HTTP. As an example, while logging in through the app to a Jisiwei account, the login request is being sent in cleartext. The vulnerability exists in both the Android and iOS version of the app. An attacker could exploit this by using an MiTM attack on the local network to obtain someone's login credentials, which gives them full access to the robot vacuum cleaner.",
+          "CVSS_Base_Score_2.0": 4.3,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 8.6
+
+        },
+        {
+          "CVE": "CVE-2019-18980",
+          "description": "Lack of Transport Encryption in the public API in Philips Hue Bridge BSB002 SW 1707040932 allows remote attackers to read API keys (and consequently bypass the pushlink protection mechanism, and obtain complete control of the connected accessories) by leveraging the ability to sniff HTTP traffic on the local intranet network.",
+          "CVSS_Base_Score_2.0": 7.9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 5.5
+
+        },
+        {
+          "CVE": "CVE-2018-13989",
+          "description": "Grundig Smart Inter@ctive TV 3.0 devices allow CSRF attacks via a POST request to TCP port 8085 containing a predictable ID value, as demonstrated by a /sendrcpackage?keyid=-2544&keysymbol=-4081 request to shut off the device.",
+          "CVSS_Base_Score_2.0": 8.3,
+          "Impact_Subscore": 8.5,
+          "Exploitability_Subscore": 8.6
+        },
+        {
+          "CVE": "CVE-2020-3110",
+          "description": "A vulnerability in the Cisco Discovery Protocol implementation for the Cisco Video Surveillance 8000 Series IP Cameras could allow an unauthenticated, adjacent attacker to execute code remotely or cause a reload of an affected IP Camera. The vulnerability is due to missing checks when processing Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to the targeted IP Camera. A successful exploit could allow the attacker to expose the affected IP Camera for remote code execution or cause it to reload unexpectedly, resulting in a denial of service (DoS) condition. Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent). This vulnerability is fixed in Video Surveillance 8000 Series IP Camera Firmware Release 1.0.7 and later.",
+          "CVSS_Base_Score_2.0": 8.3,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 6.5
+        },
+        {
+          "CVE": "CVE-2020-9264",
+          "description": "ESET Archive Support Module before 1296 allows virus-detection bypass via a crafted Compression Information Field in a ZIP archive. This affects versions before 1294 of Smart Security Premium, Internet Security, NOD32 Antivirus, Cyber Security Pro (macOS), Cyber Security (macOS), Mobile Security for Android, Smart TV Security, and NOD32 Antivirus 4 for Linux Desktop.",
+          "CVSS_Base_Score_2.0": 4.3,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 8.6
+        },
+        {
+          "CVE": "CVE-2020-11949",
+          "description": "testserver.cgi of the web service on VIVOTEK Network Cameras before XXXXX-VVTK-2.2002.xx.01x (and before XXXXX-VVTK-0XXXX_Beta2) allows an authenticated user to obtain arbitrary files from a camera's local filesystem. For example, this affects IT9388-HT devices.",
+          "CVSS_Base_Score_2.0": 4,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 8
+        },
+        {
+          "CVE": "CVE-2020-11623",
+          "description": "An issue was discovered in AvertX Auto focus Night Vision HD Indoor/Outdoor IP Dome Camera HD838 and Night Vision HD Indoor/Outdoor Mini IP Bullet Camera HD438. An attacker with physical access to the UART interface could access additional diagnostic and configuration functionalities as well as the camera's bootloader. Successful exploitation could compromise confidentiality, integrity, and availability of the affected system. It could even render the device inoperable.",
+          "CVSS_Base_Score_2.0": 7.2,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 3.9
+        },
+        {
+          "CVE": "CVE-2020-1638",
+          "description": "The FPC (Flexible PIC Concentrator) of Juniper Networks Junos OS and Junos OS Evolved may restart after processing a specific IPv4 packet",
+          "CVSS_Base_Score_2.0": 5,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 10
+
+        },
+        {
+          "CVE": "CVE-2019-12821",
+          "description": "\"A vulnerability was found in the app 2.0 of the Shenzhen Jisiwei i3 robot vacuum cleaner, while adding a device to the account using a QR-code. The QR-code follows an easily predictable pattern that depends only on the specific device ID of the robot vacuum cleaner. By generating a QR-code containing information about the device ID, it is possible to connect an arbitrary device and gain full access to it. The device ID has an initial \"\"JSW\"\" substring followed by a six digit number that depends on the specific device.\n\"",
+          "CVSS_Base_Score_2.0": 5.8,
+          "Impact_Subscore": 4.9,
+          "Exploitability_Subscore": 8.6
+
+        },
+        {
+          "CVE": "CVE-2019-11890",
+          "description": "Sony Bravia Smart TV devices allow remote attackers to cause a denial of service (device hang or reboot) via a SYN flood attack over a wired or Wi-Fi LAN.",
+          "CVSS_Base_Score_2.0": 7.8,
+          "Impact_Subscore": 6.9,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+        {
+          "CVE": "CVE-2019-11336",
+          "description": "Sony Bravia Smart TV devices allow remote attackers to retrieve the static Wi-Fi password (used when the TV is acting as an access point) by using the Photo Sharing Plus application to execute a backdoor API command, a different vulnerability than CVE-2019-10886.",
+          "CVSS_Base_Score_2.0": 4.3,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 8.6
+
+        },
+
+
+        {
+          "CVE": "CVE-2018-6294",
+          "description": "Unsecured way of firmware update in Hanwha Techwin Smartcams",
+          "CVSS_Base_Score_2.0": 7.5,
+          "Impact_Subscore": 6.4,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+        {
+          "CVE": "CVE-2020-6007",
+          "description": "Philips Hue Bridge model 2.X prior to and including version 1935144020 contains a Heap-based Buffer Overflow when handling a long ZCL string during the commissioning phase, resulting in a remote code execution.",
+          "CVSS_Base_Score_2.0": 4.3,
+          "Impact_Subscore": 6.4,
+          "Exploitability_Subscore": 3.2
+
+        },
+
+
+
+
+        {
+          "CVE": "CVE-2019-18980",
+          "description": "On Signify Philips Taolight Smart Wi-Fi Wiz Connected LED Bulb 9290022656 devices, an unprotected API lets remote users control the bulb's operation. Anyone can turn the bulb on or off, or change its color or brightness remotely. There is no authentication or encryption to use the control API. The only requirement is that the attacker have network access to the bulb.",
+          "CVSS_Base_Score_2.0": 5,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+        {
+          "CVE": "CVE-2018-11315",
+          "description": "The Local HTTP API in Radio Thermostat CT50 and CT80 1.04.84 and below products allows unauthorized access via a DNS rebinding attack. This can result in remote device temperature control, as demonstrated by a tstat t_heat request that accesses a device purchased in the Spring of 2018, and sets a home's target temperature to 95 degrees Fahrenheit. This vulnerability might be described as an addendum to CVE-2013-4860.",
+          "CVSS_Base_Score_2.0": 3.3,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 6.5
+
+        },
+
+        {
+          "CVE": "CVE-2018-17177",
+          "description": "An issue was discovered on Neato Botvac Connected 2.2.0 and Botvac 85 1.2.1 devices. Static encryption is used for the copying of so-called \"black box\" logs (event logs and core dumps) to a USB stick. These logs are RC4-encrypted with a 9-character password of *^JEd4W!I that is obfuscated by hiding it within a custom /bin/rc4_crypt binary.",
+          "CVSS_Base_Score_2.0": 2.1,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 3.9
+
+        },
+
+        {
+          "CVE": "CVE-2018-20785",
+          "description": "Secure boot bypass and memory extraction can be achieved on Neato Botvac Connected 2.2.0 devices. During startup, the AM335x secure boot feature decrypts and executes firmware. Secure boot can be bypassed by starting with certain commands to the USB serial port. Although a power cycle occurs, this does not completely reset the chip: memory contents are still in place. Also, it restarts into a boot menu that enables XMODEM upload and execution of an unsigned QNX IFS system image, thereby completing the bypass of secure boot. Moreover, the attacker can craft custom IFS data and write it to unused memory to extract all memory contents that had previously been present. This includes the original firmware and sensitive information such as Wi-Fi credentials.",
+          "CVSS_Base_Score_2.0": 4.4,
+          "Impact_Subscore": 6.4,
+          "Exploitability_Subscore": 3.4
+
+        },
+
+
+        {
+          "CVE": "CVE-2018-10987",
+          "description": "An issue was discovered on Dongguan Diqee Diqee360 devices. The affected vacuum cleaner suffers from an authenticated remote code execution vulnerability. An authenticated attacker can send a specially crafted UDP packet, and execute commands on the vacuum cleaner as root. The bug is in the function REQUEST_SET_WIFIPASSWD (UDP command 153). A crafted UDP packet runs \"/mnt/skyeye/mode_switch.sh %s\" with an attacker controlling the %s variable. In some cases, authentication can be achieved with the default password of 888888 for the admin account.",
+          "CVSS_Base_Score_2.0": 8.5,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 6.8
+
+        },
+
+        {
+          "CVE": "CVE-2019-9871",
+          "description": "Allow remote code execution",
+          "CVSS_Base_Score_2.0": 10,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2013-4860",
+          "description": "Allow remote attackers to change settings",
+          "CVSS_Base_Score_2.0": 8.3,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 6.5
+
+        },
+
+        {
+          "CVE": "CVE-2018-19442",
+          "description": "Allow a remote attacker to execute arbitrary code with root privileges",
+          "CVSS_Base_Score_2.0": 10,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 10
+
+        },
+
+        {
+          "CVE": "CVE-2017-14797",
+          "description": "Allows remote attackers to read API keys",
+          "CVSS_Base_Score_2.0": 7.9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 5.5
+
+        },
+        {
+          "CVE": "CVE-2019-18226",
+          "description": "A weak authentication method",
+          "CVSS_Base_Score_2.0": 7.5,
+          "Impact_Subscore": 6.4,
+          "Exploitability_Subscore": 10
+
+        },
+
+        {
+          "CVE": "CVE-2018-3911",
+          "description": "An exploitable vulnerability exists in the REST parser of video-core's HTTP server of the Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17",
+          "CVSS_Base_Score_2.0": 5,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3907",
+          "description": "An exploitable vulnerability exists in the REST parser of video-core's HTTP server of the Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17",
+          "CVSS_Base_Score_2.0": 6.4,
+          "Impact_Subscore": 4.9,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3909",
+          "description": "An exploitable vulnerability exists in the REST parser of video-core's HTTP server of the Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17",
+          "CVSS_Base_Score_2.0": 6.4,
+          "Impact_Subscore": 4.9,
+          "Exploitability_Subscore": 10
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3902",
+          "description": "An exploitable buffer overflow vulnerability exists in the camera \"replace\" feature of video-core's HTTP server of Samsung SmartThings Hub STH-ETH-250 devices with firmware version 0.20.17",
+          "CVSS_Base_Score_2.0": 9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 8
+
+        },
+
+        {
+          "CVE": "CVE-2018-3879",
+          "description": "An exploitable JSON injection vulnerability exists in the credentials handler of video-core's HTTP server of Samsung SmartThings Hub STH-ETH-250 devices with firmware version 0.20.17",
+          "CVSS_Base_Score_2.0": 6.5,
+          "Impact_Subscore": 6.4,
+          "Exploitability_Subscore": 8
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3880",
+          "description": "An exploitable stack-based buffer overflow vulnerability exists in the database 'find-by-cameraId' functionality of video-core's HTTP server of Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17. The video-core process incorrectly handles existing records inside its SQLite database, leading to a buffer overflow on the stack. An attacker can send an HTTP request to trigger this vulnerability.",
+          "CVSS_Base_Score_2.0": 9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 8
+
+        },
+
+
+        {
+          "CVE": "CVE-2018-3906",
+          "description": "An exploitable stack-based buffer overflow vulnerability exists in the retrieval of a database field in video-core's HTTP server of Samsung SmartThings Hub. The video-core process insecurely extracts the shard.videoHostURL field from its SQLite database, leading to a buffer overflow on the stack. An attacker can send an HTTP request to trigger this vulnerability.",
+          "CVSS_Base_Score_2.0": 7.2,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 3.9
+
+        },
+
+
+        {
+          "CVE": "CVE-2018-3912",
+          "description": "On Samsung SmartThings Hub STH-ETH-250 devices with firmware version 0.20.17, the video-core process insecurely extracts the fields from the \"shard\" table of its SQLite database, leading to a buffer overflow on the stack. The strcpy call overflows the destination buffer, which has a size of 128 bytes. An attacker can send an arbitrarily long \"secretKey\" value in order to exploit this vulnerability.",
+          "CVSS_Base_Score_2.0": 6.9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 3.4
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3917",
+          "description": "On Samsung SmartThings Hub STH-ETH-250 devices with firmware version 0.20.17, the video-core process insecurely extracts the fields from the 'shard' table of its SQLite database, leading to a buffer overflow on the stack. An attacker can send an HTTP request to trigger this vulnerability. The strcpy call overflows the destination buffer, which has a size of 16 bytes. An attacker can send an arbitrarily long 'region' value in order to exploit this vulnerability.",
+          "CVSS_Base_Score_2.0": 9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 8
+
+        },
+
+
+
+
+        {
+          "CVE": "CVE-2018-3919",
+          "description": "An exploitable stack-based buffer overflow vulnerability exists in the retrieval of database fields in video-core's HTTP server of Samsung SmartThings Hub STH-ETH-250 devices with firmware version 0.20.17. The video-core process insecurely extracts the fields from the \"clips\" table of its SQLite database, leading to a buffer overflow on the stack. An attacker can send a series of HTTP requests to trigger this vulnerability.",
+          "CVSS_Base_Score_2.0": 9,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 8
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3926",
+          "description": "An exploitable integer underflow vulnerability exists in the ZigBee firmware update routine of the hubCore binary of the Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17. The hubCore process incorrectly handles malformed files existing in its data directory, leading to an infinite loop, which eventually causes the process to crash. An attacker can send an HTTP request to trigger this vulnerability.",
+          "CVSS_Base_Score_2.0": 4.9,
+          "Impact_Subscore": 6.9,
+          "Exploitability_Subscore": 3.9
+
+        },
+
+
+
+        {
+          "CVE": "CVE-2018-3927",
+          "description": "An exploitable information disclosure vulnerability exists in the crash handler of the hubCore binary of the Samsung SmartThings Hub STH-ETH-250 - Firmware version 0.20.17. When hubCore crashes, Google Breakpad is used to record minidumps, which are sent over an insecure HTTPS connection to the backtrace.io service, leading to the exposure of sensitive data. An attacker can impersonate the remote backtrace.io server in order to trigger this vulnerability.",
+          "CVSS_Base_Score_2.0": 4.3,
+          "Impact_Subscore": 2.9,
+          "Exploitability_Subscore": 8.6
+
+        },
+
+
+        {
+          "CVE": "CVE-2019-11063",
+          "description": "A broken access control vulnerability in SmartHome app (Android versions up to 3.0.42_190515, ios versions up to 2.0.22) allows an attacker in the same local area network to list user accounts and control IoT devices that connect with its gateway (HG100) via http://[target]/smarthome/devicecontrol without any authentication. CVSS 3.0 base score 10 (Confidentiality, Integrity and Availability impacts). CVSS vector: (CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).",
+          "CVSS_Base_Score_2.0": 8.3,
+          "Impact_Subscore": 10,
+          "Exploitability_Subscore": 6.5
+
+        }
+
+
+        ]
+    }
+
+
+
+
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

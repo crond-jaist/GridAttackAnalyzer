@@ -1,0 +1,5 @@
+graphviz
+numpy==1.14.6
+pyvis
+pandas
+matplotlib
